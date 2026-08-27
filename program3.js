@@ -3,9 +3,12 @@
 import http from "http";
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
-        res.write('Hello World');
+        res.writeHead(200, { 'Content-Type': 'text/plain' });
+        res.end('hello world');
+        return;
     }
-    res.end();
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.end('Not Found');
 });
 server.listen(8000, () => {
     console.log('Server is running on port 8000');

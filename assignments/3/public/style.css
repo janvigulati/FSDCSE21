@@ -247,7 +247,7 @@ section {
 
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2.5rem;
   border-top: 1px solid var(--line-muted);
   padding-top: 2rem;

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janvi Gulati — B.Tech CSE Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#home" class="nav__name">Janvi Gulati</a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__name">Janvi<br />Gulati</h1>
+        <p class="hero__role">CSE student building small, useful things — from a blog platform to an AI interview agent.</p>
+        <p class="hero__meta">B.Tech CSE, 2nd year, ABES Engineering College, Ghaziabad. Open to internships.</p>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span>Scroll to see the work</span>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__mark" aria-hidden="true">
+        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="120" cy="120" r="118" fill="none" stroke="var(--ink-dark)" stroke-width="1.5" />
+          <path d="M40 150 C 70 60, 170 60, 200 150" fill="none" stroke="var(--accent)" stroke-width="3" />
+          <circle cx="120" cy="120" r="6" fill="var(--ink-dark)" />
+        </svg>
+      </div>
+      <div class="about__text">
+        <h2>About</h2>
+        <p>
+          I'm a second-year B.Tech Computer Science student at ABES Engineering
+          College, Ghaziabad. I like picking a small, real problem and building
+          something end to end for it — whether that's a place to write and read
+          blog posts, or an agent that can run a mock interview.
+        </p>
+        <p>
+          Right now I split my time between coursework, C++ for problem solving,
+          and web development, and I'm slowly getting more comfortable moving
+          between the two.
+        </p>
+        <ul class="about__facts">
+          <li>2nd-year B.Tech, Computer Science, ABES Engineering College, Ghaziabad</li>
+          <li>Building an AI interview agent and a blog writing platform</li>
+          <li>Learning across C++, Python, and web development</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <h2>Selected work</h2>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>AI Interview Agent</h3>
+          <a href="#" class="project__link">View project</a>
+        </div>
+        <p class="project__desc">An agent that runs mock interviews, asking questions and following up based on how a candidate answers.</p>
+        <p class="project__stack">Python</p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Blog Writing Website</h3>
+          <a href="#" class="project__link">View project</a>
+        </div>
+        <p class="project__desc">A website where users can write, publish, and browse blog posts, built to practice structuring and styling a multi-page site.</p>
+        <p class="project__stack">HTML, CSS</p>
+      </article>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills__grid">
+        <div class="skills__group">
+          <h3>Languages</h3>
+          <p>C++, Python</p>
+        </div>
+        <div class="skills__group">
+          <h3>Web development</h3>
+          <p>HTML, CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's build something.</h2>
+      <a class="contact__email" href="mailto:janvigulati881@gmail.com">janvigulati881@gmail.com</a>
+      <div class="contact__links">
+        <a href="https://github.com/janvigulati/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/janvi-gulati-070bab421" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Janvi Gulati, 2026. Built with HTML, CSS, and Express.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Rivera — Full-stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#home" class="nav__name">Alex Rivera</a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__name">Alex<br />Rivera</h1>
+        <p class="hero__role">Full-stack developer who builds fast, accessible web products from database to browser.</p>
+        <p class="hero__meta">Based in Bengaluru, India. Open to full-time roles from January 2027.</p>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span>Scroll to see the work</span>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__mark" aria-hidden="true">
+        <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="120" cy="120" r="118" fill="none" stroke="var(--ink-dark)" stroke-width="1.5" />
+          <path d="M40 150 C 70 60, 170 60, 200 150" fill="none" stroke="var(--accent)" stroke-width="3" />
+          <circle cx="120" cy="120" r="6" fill="var(--ink-dark)" />
+        </svg>
+      </div>
+      <div class="about__text">
+        <h2>About</h2>
+        <p>
+          I'm a computer science student and developer who enjoys the whole stack —
+          shaping a database schema in the morning and arguing with a CSS flexbox
+          bug by evening. Most of my projects start from a small, real problem
+          I ran into, then grow into something other people can use.
+        </p>
+        <p>
+          I care about code that reads clearly a year later and interfaces that
+          don't make people think twice. Outside of coursework, I contribute to
+          a couple of small open-source tools and mentor first-year students
+          getting started with Git.
+        </p>
+        <ul class="about__facts">
+          <li>Final-year B.Tech, Computer Science</li>
+          <li>3 shipped side projects, 1 open-source contribution merged</li>
+          <li>Comfortable across the stack, strongest on the backend</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <h2>Selected work</h2>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Tablewise</h3>
+          <a href="#" class="project__link">View project</a>
+        </div>
+        <p class="project__desc">A restaurant table-booking app with live availability, built for a local café that was managing bookings over WhatsApp.</p>
+        <p class="project__stack">React, Node.js, PostgreSQL, Socket.io</p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Ledger Lite</h3>
+          <a href="#" class="project__link">View project</a>
+        </div>
+        <p class="project__desc">A minimal expense tracker for small shop owners, with offline entry and a weekly summary sent over SMS.</p>
+        <p class="project__stack">Express, MongoDB, Twilio API, PWA</p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>CampusConnect</h3>
+          <a href="#" class="project__link">View project</a>
+        </div>
+        <p class="project__desc">A lightweight forum for my college department to share notes and internship leads, now used by around 400 students.</p>
+        <p class="project__stack">Next.js, Prisma, SQLite</p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Weatherline</h3>
+          <a href="#" class="project__link">View project</a>
+        </div>
+        <p class="project__desc">A single-page weather dashboard that turns a week's forecast into one readable line chart instead of seven separate cards.</p>
+        <p class="project__stack">JavaScript, D3.js, Open-Meteo API</p>
+      </article>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills__grid">
+        <div class="skills__group">
+          <h3>Languages</h3>
+          <p>JavaScript, TypeScript, Python, SQL, HTML &amp; CSS</p>
+        </div>
+        <div class="skills__group">
+          <h3>Frameworks &amp; libraries</h3>
+          <p>React, Express, Next.js, Prisma, Tailwind CSS</p>
+        </div>
+        <div class="skills__group">
+          <h3>Tools &amp; platforms</h3>
+          <p>Git, Docker, PostgreSQL, MongoDB, AWS (EC2, S3)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's build something.</h2>
+      <a class="contact__email" href="mailto:[email protected]">[email protected]</a>
+      <div class="contact__links">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" >Resume (PDF)</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Alex Rivera, 2026. Built with HTML, CSS, and Express.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

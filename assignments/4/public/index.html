@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f6f2" />
+    <title>Campus Help Desk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Campus Help Desk home">
+        <span class="brand-mark" aria-hidden="true">CH</span>
+        <span>Campus<span class="brand-light">Help Desk</span></span>
+      </a>
+      <span class="service-status"><span class="status-dot"></span> Student services</span>
+    </header>
+
+    <main class="layout">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">CAMPUS SERVICES / REQUESTS</p>
+        <h1 id="page-title">A hand when<br />campus needs one.</h1>
+        <p class="intro-copy">Tell us what’s getting in your way. The right campus team will take it from here.</p>
+        <div class="intro-note"><span aria-hidden="true">↗</span> Your request stays saved on this device’s server.</div>
+      </section>
+
+      <section class="form-panel" aria-labelledby="form-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">NEW REQUEST</p>
+            <h2 id="form-title">What can we help with?</h2>
+          </div>
+          <span class="step-mark" aria-hidden="true">01</span>
+        </div>
+        <form id="request-form">
+          <div class="field-grid">
+            <label class="field">
+              <span>Student name</span>
+              <input id="studentName" name="studentName" autocomplete="name" placeholder="e.g. Jordan Lee" required />
+            </label>
+            <label class="field">
+              <span>Student email</span>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@campus.edu" required />
+            </label>
+            <label class="field">
+              <span>Category</span>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Select a team</option>
+                <option>Facilities</option>
+                <option>IT Support</option>
+                <option>Housing</option>
+                <option>Academics</option>
+                <option>Campus Safety</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Priority</span>
+              <select id="priority" name="priority" required>
+                <option value="" disabled selected>Choose priority</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+              </select>
+            </label>
+          </div>
+          <label class="field description-field">
+            <span>What’s the issue?</span>
+            <textarea id="description" name="description" rows="3" placeholder="Share the details that will help us sort this out…" required></textarea>
+          </label>
+          <div class="form-footer">
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            <div class="form-actions">
+              <button id="cancel-edit" class="button button-quiet" type="button" hidden>Cancel</button>
+              <button id="submit-button" class="button button-primary" type="submit"><span id="submit-label">Send request</span><span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="requests-section" aria-labelledby="requests-title">
+        <div class="requests-heading">
+          <div>
+            <p class="eyebrow">YOUR SUBMISSIONS</p>
+            <h2 id="requests-title">Request log <span id="request-count" class="count">0</span></h2>
+          </div>
+          <button id="refresh-button" class="refresh-button" type="button" aria-label="Refresh requests" title="Refresh requests"><span aria-hidden="true">↻</span></button>
+        </div>
+        <div id="request-list" class="request-list" aria-live="polite">
+          <p class="list-state">Loading requests…</p>
+        </div>
+      </section>
+      <footer class="footer"><span>Campus Help Desk</span><span>Here to keep campus moving.</span></footer>
+    </main>
+  </body>
+</html>

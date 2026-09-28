@@ -1,0 +1,13 @@
+{
+  "name": "campus-help-desk",
+  "version": "1.0.0",
+  "description": "Campus help desk request tracker",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
